@@ -1,0 +1,27 @@
+{
+  "name": "user_graphql_server",
+  "version": "1.0.0",
+  "description": "Beginner project learning and executing graphql querries",
+  "keywords": [
+    "GraphQL",
+    "Typescript",
+    "Node",
+    "Apollo",
+    "TypeGraphQL"
+  ],
+  "homepage": "https://github.com/jadogeri/User_GraphQL_Server#readme",
+  "bugs": {
+    "url": "https://github.com/jadogeri/User_GraphQL_Server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadogeri/User_GraphQL_Server.git"
+  },
+  "license": "MIT",
+  "author": "Joseph Adogeri",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
