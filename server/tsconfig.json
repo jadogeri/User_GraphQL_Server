@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "rootDirs": ["src"],
     "outDir": "dist",
     "lib": ["es2023"],

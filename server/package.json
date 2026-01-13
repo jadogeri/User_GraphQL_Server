@@ -26,10 +26,13 @@
     "dev": "tsx watch src src/index.ts"
   },
   "dependencies": {
+    "@apollo/server": "^5.2.0",
     "express": "^5.2.1",
+    "graphql": "^16.12.0",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^5.1.7",
     "tsx": "^4.21.0",
+    "type-graphql": "^2.0.0-rc.2",
     "typeorm": "^0.3.28"
   },
   "devDependencies": {
