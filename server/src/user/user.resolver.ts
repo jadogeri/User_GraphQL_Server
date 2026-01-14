@@ -1,7 +1,7 @@
 /**
  * @author Joseph Adogeri
  * @version 1.0.0
- * @since 2024-06-10
+ * @since 14-JAN-2026
  * @filename user.resolver.ts
  * @file User Resolver Implementation using TypeGraphQL and TypeORM
  */
