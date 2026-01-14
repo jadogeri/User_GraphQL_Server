@@ -56,6 +56,7 @@ This is a beginner friendly backend application (typescript) to utilize graphql 
             <li><a href="#41-run-application">4.1 Run Application</a> </li>
             <ul>
               <li><a href="#411-run-locally">4.1.1 Run Locally</a> </li>
+              <li><a href="#412-run-docker-container">4.1.2 Run Docker Container</a> </li>
             </ul>
         </ul>
         </li>
@@ -134,6 +135,36 @@ Note: Mutations performed during session will not persist once server restarts. 
 ![Screenshot 1](assets/images/usage.png)
 
 ---
+
+#### **4.1.2 Run Docker container**
+
+1 Type docker build -t server-image . in command line to build docker image.
+
+```bash
+  docker build -t server-image .
+```
+
+![dockerbuild](assets/images/dockerimage.png)
+
+2 Type docker run --name server-container -d -it -p 4000:4000 server-image to create and start container immediately.
+
+```bash
+  docker run --name server-container -d -it -p 4000:4000 server-image
+```
+
+![dockerbuild](assets/images/dockerrun.png)
+
+4 Type docker stop server-container to stop container.
+
+```bash
+  docker stop server-container
+```
+
+5 Type docker start server-container to start container.
+
+```bash
+  docker start server-container
+```
 
 ## **5. References**
 
