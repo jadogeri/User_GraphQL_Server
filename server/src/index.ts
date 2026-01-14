@@ -9,7 +9,7 @@ import { UserResolver } from "./user/user.resolver";
 async function bootstrap() {
     // 1. Initialize TypeORM connection
     await AppDataSource.initialize()
-        .then(() => console.log("Data Source has been initialized!"))
+        .then(() => console.log("🔥 Data Source has been initialized!"))
         .catch((err) => console.error("Error during Data Source initialization", err));
 
     // 2. Build GraphQL Schema (using type-graphql for code-first)
