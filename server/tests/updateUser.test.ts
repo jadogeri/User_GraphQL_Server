@@ -1,5 +1,5 @@
-import { User } from "../user.entity";
-import { UserResolver } from '../user.resolver';
+import { User } from "../src/user/user.entity";
+import { UserResolver } from '../src/user/user.resolver';
 
 // user.resolver.updateUser.spec.ts
 // Mock for SaveOptions (not used directly, but per instructions)

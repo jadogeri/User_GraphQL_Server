@@ -1,5 +1,5 @@
-import { User } from "../user.entity";
-import { UserResolver } from '../user.resolver';
+import { User } from "../src/user/user.entity";
+import { UserResolver } from '../src/user/user.resolver';
 
 // server/src/user/user.resolver.spec.ts
 describe('UserResolver.users() users method', () => {
@@ -12,8 +12,8 @@ describe('UserResolver.users() users method', () => {
     it('should return an array of users when users exist', async () => {
       // This test aims to verify that the users method returns an array of users when User.find() resolves with user objects.
       const mockUsers = [
-        { id: 1, name: 'Alice', email: 'alice@example.com' } as User,
-        { id: 2, name: 'Bob', email: 'bob@example.com' } as User,
+        { id: 1, name: 'Alice', email: 'alice@example.com' } as unknown as User,
+        { id: 2, name: 'Bob', email: 'bob@example.com' } as unknown as User,
       ];
       jest.spyOn(User, 'find').mockResolvedValueOnce(mockUsers);
 
