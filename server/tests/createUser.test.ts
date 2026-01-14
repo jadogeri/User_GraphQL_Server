@@ -1,7 +1,6 @@
 import { User } from "../src/user/user.entity";
 import { UserResolver } from '../src/user/user.resolver';
 
-
 // Mock User class
 class MockUser {
   public firstName: string = "";

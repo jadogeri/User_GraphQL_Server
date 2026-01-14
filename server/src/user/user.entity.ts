@@ -1,3 +1,10 @@
+/**
+ * @author Joseph Adogeri
+ * @version 1.0.0
+ * @since 2024-06-10
+ * @filename user.entity.ts
+ * @file User Entity Definition using TypeORM and TypeGraphQL
+ */
 import { ObjectType, Field, ID } from "type-graphql";
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 
