@@ -7,8 +7,8 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - './server/src/**'
-      - './server/tests/**'
+      - 'server/src/**'
+      - 'server/tests/**'
   pull_request:
     branches: [ "main" ]
     paths:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./server
+        working-directory: server
 
     strategy:
       matrix:
