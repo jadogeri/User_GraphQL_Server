@@ -47,7 +47,7 @@ This is a beginner friendly backend application (typescript) to utilize graphql 
       </li>
     </ul> 
      <ul>
-      <li><a href="#3-installation">3. Technology stack</a>
+      <li><a href="#3-technology-stack">3. Technology Stack</a>
       </li>
     </ul> 
     <ul>
@@ -60,11 +60,15 @@ This is a beginner friendly backend application (typescript) to utilize graphql 
             </ul>
         </ul>
         </li>
+    </ul>
+    <ul> 
+      <li><a href="#5-tests">5. Tests</a>
+      </li>
     </ul> 
     <ul> 
-        <li><a href="#5-references">5. References</a>
-        </li>
-    <ul>
+      <li><a href="#6-references">6. References</a>
+      </li>
+    </ul>
 </ul>
 
 ## **1. Introduction**
@@ -88,7 +92,7 @@ Note: Mutations performed during session will not persist once server restarts. 
 - **Backend Frameworks**: Apollo Server
 - **Database**: SQLite
 - **Container**: Docker
-- **Test**: JUnit 
+- **Test**: Jest 
 - **Plugins**: Early AI
 - **Version Control**: Git and GitHub
 - **CI/CD**: GitHub Actions
@@ -166,7 +170,20 @@ Note: Mutations performed during session will not persist once server restarts. 
   docker start server-container
 ```
 
-## **5. References**
+---
+## **5. Tests**
+
+1. run test command below.
+
+```bash
+  npm run test
+```
+
+![tests](assets/images/tests.png)
+
+---
+
+## **6. References**
 
 * FreeCodeCamp : [Frontend Web Development: (HTML, CSS, JavaScript, TypeScript, React)](https://www.youtube.com/watch?v=MsnQ5uepIa).
 * AweSome Open Source : [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)

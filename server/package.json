@@ -22,7 +22,7 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "dev": "tsx watch src src/index.ts"
   },
   "dependencies": {
