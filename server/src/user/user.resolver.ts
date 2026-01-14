@@ -1,3 +1,11 @@
+/**
+ * @author Joseph Adogeri
+ * @version 1.0.0
+ * @since 2024-06-10
+ * @filename user.resolver.ts
+ * @file User Resolver Implementation using TypeGraphQL and TypeORM
+ */
+
 import { Resolver, Query, Mutation, Arg, Int } from "type-graphql";
 import { User } from "./user.entity";
 
