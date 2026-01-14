@@ -4,6 +4,11 @@ import { User } from "./user.entity";
 @Resolver()
 export class UserResolver {
   // Read operation (Query)
+/**
+   * Retrieves a list of all users from the database.
+   * @returns A promise that resolves to an array of User objects.
+   * @throws Will throw an error if the database query fails.
+   */
   @Query(() => [User])
   async users(): Promise<User[]> {
     return User.find();
@@ -16,6 +21,16 @@ export class UserResolver {
   }
 
   // Create operation (Mutation)
+/**
+   * Creates a new user with the provided details and saves it to the database.
+   * 
+   * @param firstName - The first name of the user.
+   * @param lastName - The last name of the user.
+   * @param email - The email address of the user.
+   * @param password - The password for the user account.
+   * @returns A promise that resolves to the created User object.
+   * @throws Error if the user cannot be saved to the database.
+   */
   @Mutation(() => User)
   async createUser(
     @Arg("firstName", () => String) firstName: string,
@@ -28,6 +43,18 @@ export class UserResolver {
   }
 
   // Update operation (Mutation)
+/**
+   * Updates the user with the specified ID. Only the provided fields will be updated.
+   * If the user is not found, returns null.
+   * 
+   * @param id - The ID of the user to update.
+   * @param firstName - The new first name of the user (optional).
+   * @param lastName - The new last name of the user (optional).
+   * @param email - The new email of the user (optional).
+   * @param password - The new password of the user (optional).
+   * @returns The updated user object or null if the user was not found.
+   * @throws Error if there is an issue saving the user.
+   */
   @Mutation(() => User, { nullable: true })
   async updateUser(
     @Arg("id", () => Int) id: number,

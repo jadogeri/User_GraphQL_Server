@@ -22,7 +22,7 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "tsx watch src src/index.ts"
   },
   "dependencies": {
@@ -30,14 +30,18 @@
     "better-sqlite3": "^12.6.0",
     "express": "^5.2.1",
     "graphql": "^16.12.0",
+    "graphql-scalars": "^1.25.0",
+    "jest": "^30.2.0",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^5.1.7",
+    "ts-jest": "^29.4.6",
     "tsx": "^4.21.0",
     "type-graphql": "^2.0.0-rc.2",
     "typeorm": "^0.3.28"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.0.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
