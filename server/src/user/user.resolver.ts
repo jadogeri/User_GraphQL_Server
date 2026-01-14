@@ -6,6 +6,7 @@
  * @file User Resolver Implementation using TypeGraphQL and TypeORM
  */
 
+
 import { Resolver, Query, Mutation, Arg, Int } from "type-graphql";
 import { User } from "./user.entity";
 
